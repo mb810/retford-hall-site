@@ -509,3 +509,41 @@ textarea {
   display: flex;
   flex-direction: column;
 }
+.success-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 40px 6vw;
+  background:
+    linear-gradient(rgba(23, 23, 23, 0.45), rgba(23, 23, 23, 0.45)),
+    url("assets/images/hero-front.png") center/cover;
+}
+
+.success-card {
+  width: min(720px, 100%);
+  padding: 54px;
+  border-radius: var(--radius);
+  background: rgba(246, 241, 232, 0.94);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+  text-align: center;
+}
+
+.success-card h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.success-card p:not(.eyebrow) {
+  max-width: 520px;
+  margin: 22px auto 32px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.success-card .button {
+  display: inline-flex;
+}
