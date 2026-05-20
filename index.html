@@ -348,7 +348,8 @@
           </p>
         </div>
 
-        <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/success.html"></form>
+        <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" action="/success.html">
+  <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="form-name" value="contact" />
 
           <label>
@@ -371,7 +372,7 @@
             <textarea name="message" rows="5" required></textarea>
           </label>
 
-          <button type="submit" class="button button-primary">Send enquiry</button>
+          <button type="submit" form="contact-form" class="button button-primary">Send enquiry</button>
         </form>
       </div>
     </section>
